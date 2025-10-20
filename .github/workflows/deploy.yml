@@ -42,7 +42,7 @@ jobs:
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build
-        run: npm run build # or pnpm src:build / yarn src:build / bun run src:build
+        run: npm run build -- --base /To-Do-List/ # or pnpm src:build / yarn src:build / bun run src:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
